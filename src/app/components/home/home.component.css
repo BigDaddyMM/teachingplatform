@@ -1,0 +1,63 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px; /* Increased padding to add space around the grid container */
+  }
+  
+  /* Grid Container for Rooms */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 40px; /* Increased gap between the individual rooms */
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px; /* Padding around the grid for spacing */
+    background-color: #f9f9f9; /* Optional light background for better visibility */
+    border-radius: 15px; /* Optional rounded corners for the grid */
+  }
+  
+  /* Room Style */
+  .room {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .room:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .room-title {
+    font-size: 2rem;
+    color: #FFFFFF;
+    text-shadow: 0px 5px 10px rgba(0, 0, 0, 0.7);
+    font-weight: bold;
+    letter-spacing: 2px;
+    -webkit-text-stroke: 2px rgb(15, 199, 245);
+  }
+  
+  /* Footer Stick to Bottom */
+  footer {
+    margin-top: auto;
+  }
+  

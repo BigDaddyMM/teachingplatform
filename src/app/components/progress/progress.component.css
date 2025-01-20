@@ -1,0 +1,58 @@
+/* Student Progress Main Layout */
+.progress-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+  }
+  
+  .progress-content {
+    width: 60%;
+    text-align: center;
+  }
+  
+  /* Title */
+  .progress-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Progress List */
+  .progress-list {
+    margin-top: 20px;
+  }
+  
+  .progress-item {
+    margin: 15px 0;
+  }
+  
+  /* Progress Bar Container */
+  .progress-bar-container {
+    background-color: #e0e0e0;
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  
+  /* Progress Bar */
+  .progress-bar {
+    height: 100%;
+    background-color: #4caf50;
+    transition: width 0.3s ease;
+  }
+  
+  /* Progress Percentage Text */
+  .progress-bar-text {
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  

@@ -1,0 +1,99 @@
+.settings-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto; /* Centers the content */
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.settings-section, .class-section, .danger-zone {
+  margin-bottom: 20px;
+}
+
+.settings-item {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.settings-item label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 80%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.button {
+  width: 80%; /* Ensure button and input fields are the same width */
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.delete-profile-btn {
+  background-color: #f44336;
+}
+
+.delete-profile-btn:hover {
+  background-color: #e53935;
+}
+
+.danger-zone {
+  text-align: center;
+}
+/* Ensuring the entire section is centered */
+.class-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Adjusting the styling of the individual items in the class-section */
+.class-section .settings-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%; /* Adjust width to match the previous section's input width */
+  margin-bottom: 15px;
+}
+
+/* Ensuring input fields and buttons are the same size */
+.class-section .input-field, 
+.class-section .button {
+  width: 100%; /* Full width within the container */
+  max-width: 400px; /* Optional: adds a maximum width to prevent it from becoming too wide */
+}
+
+/* Adding space between input and button */
+.class-section .button {
+  margin-top: 10px;
+}
+
+.class-section label {
+  display: block;
+  margin-bottom: 5px;
+}

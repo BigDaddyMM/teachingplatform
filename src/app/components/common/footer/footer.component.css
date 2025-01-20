@@ -1,0 +1,36 @@
+/* Footer Styles */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #555;
+    border-top: 1px solid #ccc;
+    background-color: #f9f9f9;
+    margin-top: auto;
+  }
+  
+  .footer-text {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .footer-link {
+    color: #0073e6;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-link:hover {
+    color: #004b99;
+  }
+  

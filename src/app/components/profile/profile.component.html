@@ -1,0 +1,22 @@
+<app-header></app-header>
+<main class="profile-main">
+    <div class="profile-container">
+      <div class="profile-header">
+        <img [src]="profilePictureUrl" alt="User Profile Picture" class="profile-picture">
+        <h1 class="profile-name">{{ fullName }}</h1>
+      </div>
+  
+      <h2 class="progress-title">Your Class Progress:</h2>
+  
+      <div class="progress-list">
+        <div class="progress-item" *ngFor="let progress of classProgress">
+          <h3>{{ progress.className }}</h3>
+          <div class="progress-bar-container">
+            <div class="progress-bar" [style.width.%]="progress.progress"></div>
+          </div>
+          <span>{{ progress.progress }}%</span>
+        </div>
+      </div>
+    </div>
+  </main>
+<app-footer></app-footer>

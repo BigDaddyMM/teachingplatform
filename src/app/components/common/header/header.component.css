@@ -1,0 +1,53 @@
+/* Header Styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px; /* Increased padding for a larger header */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  /* Logo Style */
+  .logo {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-size: 2.5rem; /* Increased font size */
+    font-weight: bold;
+    color: #4CAF50;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    gap: 40px; /* Increased space between buttons */
+    margin-left: 25px; /* Adjusted space between logo and first button */
+  }
+  
+  /* Navigation Buttons */
+  .nav-link {
+    font-size: 1.25rem; /* Increased button text size */
+    padding: 8px 15px; /* Increased padding for better feel */
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 8px; /* Slightly larger rounded edges */
+  }
+  
+  .nav-link:hover {
+    color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.1); /* Subtle hover background */
+  }
+  
+  /* Logout Link - Styled Differently */
+  .logout {
+    color: red;
+  }
+  
+  .logout:hover {
+    color: darkred;
+    background-color: rgba(255, 0, 0, 0.1); /* Subtle hover background for logout */
+  }
+  

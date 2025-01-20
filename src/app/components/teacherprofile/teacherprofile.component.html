@@ -1,0 +1,19 @@
+<app-header></app-header>
+<main class="profile-main">
+    <div class="profile-container">
+      <div class="profile-header">
+        <img [src]="profilePictureUrl" alt="Teacher Profile Picture" class="profile-picture">
+        <h1 class="profile-name">{{ fullName }}</h1>
+        <p class="teacher-description">{{ description }}</p>
+      </div>
+  
+      <h2 class="overview-title">Classes Overview:</h2>
+  
+      <div class="class-grid">
+        <div class="class-card" *ngFor="let className of classesTaught" (click)="navigateToClass(className)">
+          <h3 class="class-name">{{ className }}</h3>
+        </div>
+      </div>
+    </div>
+  </main>
+<app-footer></app-footer>

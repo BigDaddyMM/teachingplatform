@@ -1,0 +1,60 @@
+<app-header></app-header>
+
+<main class="settings-container">
+  <h1>Account Settings</h1>
+
+  <section class="settings-section">
+    <h2>Profile Management</h2>
+
+    <div class="settings-item">
+      <label for="change-name">Change Name:</label>
+      <input id="change-name" [(ngModel)]="name" placeholder="Enter new name" class="input-field">
+      <button class="button" (click)="updateName()">Update Name</button>
+    </div>
+
+    <div class="settings-item">
+      <label for="change-email">Change Email:</label>
+      <input id="change-email" [(ngModel)]="email" placeholder="Enter new email" class="input-field">
+      <button class="button" (click)="updateEmail()">Update Email</button>
+    </div>
+
+    <div class="settings-item">
+      <label for="change-password">Change Password:</label>
+      <input id="change-password" type="password" [(ngModel)]="password" placeholder="Enter new password" class="input-field">
+      <button class="button" (click)="updatePassword()">Update Password</button>
+    </div>
+
+    <div class="settings-item">
+      <label for="change-profile-picture">Change Profile Picture:</label>
+      <input id="change-profile-picture" type="file" (change)="uploadProfilePicture($event)" class="input-field">
+      <button class="button" (click)="saveProfilePicture()">Upload Picture</button>
+    </div>
+
+    <div class="settings-item" *ngIf="isTeacher">
+      <label for="change-description">Change Description:</label>
+      <textarea id="change-description" [(ngModel)]="description" rows="3" placeholder="Enter new description" class="input-field"></textarea>
+      <button class="button" (click)="updateDescription()">Update Description</button>
+    </div>
+  </section>
+
+  <section class="class-section">
+    <h2>Class Management</h2>
+    <div *ngIf="isStudent">
+      <label for="join-class">Join Class:</label>
+      <input id="join-class" [(ngModel)]="classCode" placeholder="Enter class code" class="input-field">
+      <button class="button" (click)="joinClass()">Join</button>
+    </div>
+    <div *ngIf="isTeacher">
+      <label for="create-class">Create Class:</label>
+      <input id="create-class" [(ngModel)]="newClassName" placeholder="Enter class name" class="input-field">
+      <button class="button" (click)="createClass()">Create</button>
+    </div>
+  </section>
+
+  <section class="danger-zone">
+    <h2>Danger Zone</h2>
+    <button class="delete-profile-btn button" (click)="deleteProfile()">Delete Profile</button>
+  </section>
+</main>
+
+<app-footer></app-footer>

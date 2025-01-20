@@ -1,0 +1,114 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Background and Main Page */
+.login-page {
+  font-family: Arial, sans-serif;
+  color: black; /* Changed text color to black */
+  height: 100vh;
+  background: url('https://example.com/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles (No background color for header) */
+.header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Logo Style */
+.logo {
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4CAF50;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-left: 20px;
+}
+
+/* Login Form Container */
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-heading {
+  font-size: 2.5rem;
+  margin-bottom: 16px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.welcome-message {
+  font-size: 1.125rem;
+  margin-bottom: 24px;
+  max-width: 30%; /* Limit width to prevent overflow */
+  word-wrap: break-word; /* Ensure text breaks if it's too long */
+  margin-left: auto;
+  margin-right: auto; /* Center the text */
+}
+
+/* Login Form */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Input Fields - Make them more rounded */
+.form-input {
+  width: 100%;
+  padding: 12px; /* Increased padding for better feel */
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 15px; /* Increased border-radius for more rounded edges */
+  font-size: 1rem;
+}
+
+/* Sign In Button - Make it more rounded */
+.sign-in-button {
+  width: 100%;
+  padding: 12px; /* Increased padding for better feel */
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 15px; /* Increased border-radius for more rounded edges */
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-in-button:hover {
+  background-color: #45a049;
+}
+
+/* Signup Message */
+.signup-message {
+  margin-top: 16px;
+  font-size: 1rem;
+}
+
+.signup-message a {
+  color: #0059ff;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}

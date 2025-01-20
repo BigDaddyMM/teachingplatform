@@ -1,0 +1,23 @@
+<div class="signup-page">
+    <header class="header">
+      <div class="logo">EduBloom</div>
+    </header>
+  
+    <main class="signup-form-container">
+      <h1 class="welcome-heading">Join us today! 😊</h1>
+      <p class="welcome-message">
+        Create an account to unlock personalized tools and make learning fun.
+      </p>
+      <form class="signup-form" (submit)="onSignup()">
+        <input type="text" placeholder="First Name" class="form-input" required />
+        <input type="text" placeholder="Last Name" class="form-input" required />
+        <input type="email" placeholder="Email" class="form-input" required />
+        <input type="password" placeholder="Password" class="form-input" required />
+        <button type="submit" class="signup-button">Sign Up</button>
+      </form>
+      <p class="signin-message">
+        Already have an account? <a (click)="navigateToSignIn()">Sign in here</a>
+      </p>
+    </main>
+  </div>
+  

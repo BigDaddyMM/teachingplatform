@@ -1,0 +1,20 @@
+<app-header></app-header>
+<div class="progress-container">
+  <div class="progress-content">
+    <h1 class="progress-title">Your Progress</h1>
+    
+    <div class="progress-list">
+      <div *ngFor="let classItem of classes" class="progress-item">
+        <div class="class-name" [routerLink]="['/class', classItem.id]">{{ classItem.name }}</div>
+        <div class="progress-bar-container" [routerLink]="['/class', classItem.id]">
+          <div class="progress-bar" [ngStyle]="{ width: classItem.progress + '%' }"></div>
+          <div class="progress-bar-text">{{ classItem.progress }}%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  
+<app-footer></app-footer>

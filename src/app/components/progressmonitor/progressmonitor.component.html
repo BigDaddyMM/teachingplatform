@@ -1,0 +1,8 @@
+<app-header></app-header>
+<div class="teacher-progress-container">
+    <h1>Student Progress</h1>
+    <div *ngFor="let student of students" class="student-item" (click)="viewStudentProgress(student.studentId)">
+      <div class="student-name">{{ student.name }}</div>
+    </div>
+  </div>
+<app-footer></app-footer>
