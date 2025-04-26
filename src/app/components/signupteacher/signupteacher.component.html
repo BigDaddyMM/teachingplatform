@@ -1,29 +1,29 @@
 <div class="signup-page">
     <header class="header">
-      <div class="logo">EduBloom</div>
+      <div class="logo">واحة المعرفة</div>
     </header>
   
     <main class="signup-form-container">
-      <h1 class="welcome-heading">Join us today! 😊</h1>
+      <h1 class="welcome-heading">😊انضم الآن</h1>
       <p class="welcome-message">
-        Create an account to unlock personalized tools and share your expertise.
+        نشئ حسابك للوصول إلى أدوات مخصصة ومشاركة معرفتك مع الآخرين!
       </p>
       <form class="signup-form" (submit)="onSignup()">
-        <input type="text" placeholder="First Name" class="form-input" required />
-        <input type="text" placeholder="Last Name" class="form-input" required />
-        <input type="email" placeholder="Email" class="form-input" required />
-        <input type="password" placeholder="Password" class="form-input" required />
+        <input type="text" placeholder="الاسم" class="form-input" required />
+        <input type="text" placeholder="اللقب" class="form-input" required />
+        <input type="email" placeholder="البريد الالكتروني" class="form-input" required />
+        <input type="password" placeholder="كلمة السر" class="form-input" required />
         <select class="form-input" required>
-          <option value="" disabled selected>Select your subject</option>
-          <option value="reading">Reading</option>
-          <option value="writing">Writing</option>
-          <option value="communication">Communication</option>
-          <option value="mathematics">Mathematics</option>
+          <option value="" disabled selected>اختر المجال</option>
+          <option value="reading">قراءة</option>
+          <option value="writing">كتابة</option>
+          <option value="communication">تواصل</option>
+          <option value="mathematics">رياضيات</option>
         </select>
-        <button type="submit" class="signup-button">Sign Up</button>
+        <button type="submit" class="signup-button">إتمام التسجيل</button>
       </form>
       <p class="signin-message">
-        Already have an account? <a (click)="navigateToSignIn()">Sign in here</a>
+        لديك حساب بالفعل؟ <a (click)="navigateToSignIn()">سجّل الدخول</a>
       </p>
     </main>
   </div>

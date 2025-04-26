@@ -1,59 +1,59 @@
 <app-header></app-header>
 
 <main class="settings-container">
-  <h1>Account Settings</h1>
+  <h1>إعدادات الحساب </h1>
 
   <section class="settings-section">
-    <h2>Profile Management</h2>
+    <h2>إدارة الملف الشخصي</h2>
 
     <div class="settings-item">
-      <label for="change-name">Change Name:</label>
-      <input id="change-name" [(ngModel)]="name" placeholder="Enter new name" class="input-field">
-      <button class="button" (click)="updateName()">Update Name</button>
+      <label for="change-name">تغيير الاسم</label>
+      <input id="change-name" [(ngModel)]="name" placeholder="أدخل كلمة السر الجديد" class="input-field">
+      <button class="button" (click)="updateName()">تأكيد</button>
     </div>
 
     <div class="settings-item">
-      <label for="change-email">Change Email:</label>
-      <input id="change-email" [(ngModel)]="email" placeholder="Enter new email" class="input-field">
-      <button class="button" (click)="updateEmail()">Update Email</button>
+      <label for="change-email">تعديل البريد الالكتروني</label>
+      <input id="change-email" [(ngModel)]="email" placeholder="أدخل بريدك الاكتروني الجديد" class="input-field">
+      <button class="button" (click)="updateEmail()">تأكيد</button>
     </div>
 
     <div class="settings-item">
-      <label for="change-password">Change Password:</label>
-      <input id="change-password" type="password" [(ngModel)]="password" placeholder="Enter new password" class="input-field">
-      <button class="button" (click)="updatePassword()">Update Password</button>
+      <label for="change-password">تغيير كلمة السر </label>
+      <input id="change-password" type="password" [(ngModel)]="password" placeholder="أدخل كلمة السر الجديدة" class="input-field">
+      <button class="button" (click)="updatePassword()">تأكيد</button>
     </div>
 
     <div class="settings-item">
-      <label for="change-profile-picture">Change Profile Picture:</label>
+      <label for="change-profile-picture">تغيير صورة الملف الشخصي</label>
       <input id="change-profile-picture" type="file" (change)="uploadProfilePicture($event)" class="input-field">
-      <button class="button" (click)="saveProfilePicture()">Upload Picture</button>
+      <button class="button" (click)="saveProfilePicture()">تأكيد</button>
     </div>
 
     <div class="settings-item" *ngIf="isTeacher">
-      <label for="change-description">Change Description:</label>
-      <textarea id="change-description" [(ngModel)]="description" rows="3" placeholder="Enter new description" class="input-field"></textarea>
-      <button class="button" (click)="updateDescription()">Update Description</button>
+      <label for="change-description">تغيير الوصف </label>
+      <textarea id="change-description" [(ngModel)]="description" rows="3" placeholder="أدخل الوصف الجديد" class="input-field"></textarea>
+      <button class="button" (click)="updateDescription()">تأكيد</button>
     </div>
   </section>
 
   <section class="class-section">
-    <h2>Class Management</h2>
+    <h2>إدارة الفصل</h2>
     <div *ngIf="isStudent">
-      <label for="join-class">Join Class:</label>
+      <label for="join-class">الانضمام إلى الفصل </label>
       <input id="join-class" [(ngModel)]="classCode" placeholder="Enter class code" class="input-field">
-      <button class="button" (click)="joinClass()">Join</button>
+      <button class="button" (click)="joinClass()">انضمام</button>
     </div>
     <div *ngIf="isTeacher">
-      <label for="create-class">Create Class:</label>
-      <input id="create-class" [(ngModel)]="newClassName" placeholder="Enter class name" class="input-field">
-      <button class="button" (click)="createClass()">Create</button>
+      <label for="create-class">إنشاء فصل دراسي</label>
+      <input id="create-class" [(ngModel)]="newClassName" placeholder="أدخل اسم الفصل" class="input-field">
+      <button class="button" (click)="createClass()">إنشاء</button>
     </div>
   </section>
 
   <section class="danger-zone">
-    <h2>Danger Zone</h2>
-    <button class="delete-profile-btn button" (click)="deleteProfile()">Delete Profile</button>
+    <h2>منطقة الخطر</h2>
+    <button class="delete-profile-btn button" (click)="deleteProfile()">حذف الحساب</button>
   </section>
 </main>
 
