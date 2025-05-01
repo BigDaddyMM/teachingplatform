@@ -2,11 +2,11 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensures padding/border do not add extra width */
+  box-sizing: border-box;
 }
 
 body, html {
-  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
 }
@@ -15,8 +15,11 @@ body, html {
   font-family: Arial, sans-serif;
   color: #333;
   display: flex;
+  background: url('/assets/images/bg5.jpg') no-repeat center center fixed;
+  background-size: cover;
   flex-direction: column;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh;
+  
 }
 
 /* Header Styles */
@@ -31,60 +34,61 @@ body, html {
   font-family: 'Comic Sans MS', 'Comic Sans', cursive;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #4CAF50;
+  color: #FFD700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-left: 20px;
 }
 
 /* Main Content Styles */
 .main-content {
-  flex: 1; /* Ensures main content takes up available space */
-  display: grid;
-  grid-template-columns: 4fr 3fr; /* Adjusted column ratio */
-  gap: 20px;
-  align-items: center; /* Centers items vertically */
-  justify-items: center; /* Centers items horizontally */
-  padding: 40px 20px;
-  max-width: 1600px; /* Prevent content from exceeding a reasonable width */
-  margin: 0 auto; /* Center the grid horizontally */
-}
-
-.text-section {
-  padding-right: 20px;
-}
-
-.heading {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
-
-.description {
-  font-size: 1.125rem;
-  margin-bottom: 24px;
-}
-
-.cta-button {
-  background-color: #000;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #555;
-}
-
-.image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
   text-align: center;
 }
 
-.illustration {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.text-section {
+  max-width: 700px;
 }
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  background: linear-gradient(to right, #ff69b4, #00bfff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  font-size: 1.375rem;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.sub-description {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.cta-button {
+  background: linear-gradient(to right, #ff69b4, #00bfff);
+  color: #ffffff;
+  padding: 14px 28px;
+  border: 2px solid #ff69b4;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.cta-button:hover {
+  opacity: 0.8;
+}
+

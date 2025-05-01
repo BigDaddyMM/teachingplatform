@@ -10,8 +10,8 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { SignupteacherComponent } from './components/signupteacher/signupteacher.component';
 import { SettingsComponent } from './components/settings/settings.component';
 import { MathComponent } from './components/classes/math/math.component';
-import { ReadwriteComponent } from './components/classes/readwrite/readwrite.component';
-import { CommunicationComponent } from './components/classes/communication/communication.component';
+import { FrenchComponent } from './components/classes/french/french.component';
+import { ArabicComponent } from './components/classes/arabic/arabic.component';
 import { ProgressComponent } from './components/progress/progress.component';
 import { TeacherprofileComponent } from './components/teacherprofile/teacherprofile.component';
 import { ProgressmonitorComponent } from './components/progressmonitor/progressmonitor.component';
@@ -54,12 +54,12 @@ const routes: Routes = [
     component: MathComponent,
   },
   {
-    path: 'reading-writing',
-    component: ReadwriteComponent,
+    path: 'french',
+    component: FrenchComponent,
   },
   {
-    path: 'communication',
-    component: CommunicationComponent,
+    path: 'arabic',
+    component: ArabicComponent,
   },
   {
     path: Route.PROGRESS,

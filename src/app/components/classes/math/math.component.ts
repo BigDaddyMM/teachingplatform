@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-math',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class MathComponent {
 
+
+
+  constructor(private router: Router) {}
+
+  navigateTo(lesson: string): void {
+    this.router.navigate([`/lessons/${lesson}`]);
+  }
 }

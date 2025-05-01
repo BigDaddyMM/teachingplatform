@@ -14,11 +14,12 @@ import { LandingComponent } from './components/landing/landing.component';
 import { HeaderComponent } from './components/common/header/header.component';
 import { FooterComponent } from './components/common/footer/footer.component';
 import { MathComponent } from './components/classes/math/math.component';
-import { ReadwriteComponent } from './components/classes/readwrite/readwrite.component';
-import { CommunicationComponent } from './components/classes/communication/communication.component';
+import { FrenchComponent } from './components/classes/french/french.component';
+import { ArabicComponent } from './components/classes/arabic/arabic.component';
 import { TeacherprofileComponent } from './components/teacherprofile/teacherprofile.component';
 import { FormsModule } from '@angular/forms';
 import { ProgressmonitorComponent } from './components/progressmonitor/progressmonitor.component';
+import { LessonsGridComponent } from './components/common/lessons-grid/lessons-grid.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +36,11 @@ import { ProgressmonitorComponent } from './components/progressmonitor/progressm
     HeaderComponent,
     FooterComponent,
     MathComponent,
-    ReadwriteComponent,
-    CommunicationComponent,
+    FrenchComponent,
+    ArabicComponent,
     TeacherprofileComponent,
-    ProgressmonitorComponent
+    ProgressmonitorComponent,
+    LessonsGridComponent
   ],
   imports: [
     BrowserModule,

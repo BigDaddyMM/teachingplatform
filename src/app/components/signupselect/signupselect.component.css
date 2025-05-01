@@ -21,6 +21,8 @@ body, html {
     width: 100%;
     display: flex;
     flex-direction: column;
+    background: url('/assets/images/bg5.jpg') no-repeat center center fixed;
+  background-size: cover;
   }
   
   /* Header Styles (No background color for header) */
@@ -36,7 +38,7 @@ body, html {
     font-family: 'Comic Sans MS', 'Comic Sans', cursive;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #4CAF50;
+    color: #FFD700;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-left: 20px;
   }
@@ -53,13 +55,14 @@ body, html {
   }
   
   .role-heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    color: #FFA500;
     margin-bottom: 16px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
   }
   
   .role-message {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     margin-bottom: 24px;
     max-width: 30%; /* Match text behavior with the login page */
     margin-left: auto;
@@ -79,10 +82,10 @@ body, html {
   .role-button {
     padding: 12px; /* Same padding as login button */
     font-size: 1rem;
-    border: none;
+    border: 2px solid #ff69b4;
     border-radius: 15px; /* Same rounded corners as login button */
     cursor: pointer;
-    transition: background-color 0.3s;
+    background: linear-gradient(to right, #ff69b4, #00bfff); /* Pink to blue */
     background-color: #4CAF50;
     color: white;
     margin-bottom: 16px; /* Add spacing between buttons */
@@ -90,6 +93,6 @@ body, html {
   }
   
   .role-button:hover {
-    background-color: #45a049;
+    background: linear-gradient(to right, #ff85c1, #33ccff); /* Lighter gradient on hover */
   }
   
